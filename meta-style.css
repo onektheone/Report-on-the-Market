@@ -1,0 +1,30 @@
+html,
+h1{
+    font-size: 18px;
+    color: white;
+    background-color: black;
+    text-align:center;
+}
+h2{
+  font-size: 12px;
+    color: white;
+    background-color: black;
+    text-align:center;
+}
+
+.content {
+  padding: 20px;
+  text-align:left;
+}
+
+.article-image {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 20px;
+}

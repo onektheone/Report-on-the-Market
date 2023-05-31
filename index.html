@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Market Watch</title>
+    <link rel="stylesheet" href="style.css" />
+    
+      <script src="https://kit.fontawesome.com/e6a2fc60c7.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="#home" id="navbar__logo">Report</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#home" class="navbar__links" id="home-page">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links" id="about-page"
+              >About</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a href="#stocks" class="navbar__links" id="stocks-page">Stocks</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#polls" class="navbar__links" id="polls-page"
+              >Polls</a
+            >
+          </li>
+          <li class="navbar__btn">
+            <a href="mailto:paulmacdonald2004@gmail.com" class="button" id="signup">Ideas?</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+      <div class="hero__container">
+        <h1 class="hero__heading">Learn about the <span>Market</span></h1>
+        <p class="hero__description">Gain Knowledge</p>
+        <button class="main__btn"><a href="https://finance.yahoo.com/news/">Headlines</a></button>
+      </div>
+    </div>
+
+    
+
+    <!-- Stocks Section -->
+    <div class="stocks" id="stocks">
+      <h1>Stocks</h1>
+      <div class="stocks__wrapper">
+        <div class="stocks__card">
+          <h2>TSM</h2>
+          <p>Taiwan Semiconductor Manufacturing</p>
+          <div class="stocks__btn">
+            <style>
+             .large-button {
+               width:250px;
+               height:250px;
+             }
+           </style>
+             <body>
+              <img src="tsm.png" id="tsm-button" class="large-button">
+         
+               <script type="text/javascript">
+             const tsmButton = document.getElementById("tsm-button");
+             tsmButton.addEventListener("click", function() {
+               window.location.href = "tsm-info.html";
+             });
+           </script>
+           </div>
+        </div>
+        <div class="stocks__card">
+          <h2>AAPL</h2>
+          <p>Apple</p>
+          <div class="stocks__btn">
+            <style>
+              .large-button {
+                width:250px;
+                height:250px;
+              }
+            </style>
+              <body>
+               <img src="Apple.png" id="apple-button" class="large-button">
+          
+                <script type="text/javascript">
+              const appleButton = document.getElementById("apple-button");
+              appleButton.addEventListener("click", function() {
+                window.location.href = "apple.html";
+              });
+            </script>
+            </div>
+        </div>
+        <div class="stocks__card">
+          <h2>MSFT</h2>
+          <p>Microsoft</p>
+          <div class="stocks__btn">
+            <style>
+              .large-button {
+                width:250px;
+                height:250px;
+              }
+            </style>
+              <body>
+               <img src="msft.png" id="microsoft-button" class="large-button">
+          
+                <script type="text/javascript">
+              const msftButton = document.getElementById("microsoft-button");
+              msftButton.addEventListener("click", function() {
+                window.location.href = "msft.html";
+              });
+            </script>
+          
+        </div>
+        </div>
+        <div class="stocks__card">
+          <h2>META</h2>
+          <p>META Platforms</p>
+          <div class="stocks__btn">
+            <style>
+              .large-button {
+                width:250px;
+                height:250px;
+              }
+            </style>
+              <body>
+               <img src="meta.png" id="meta-button" class="large-button">
+          
+                <script type="text/javascript">
+              const metaButton = document.getElementById("meta-button");
+              metaButton.addEventListener("click", function() {
+                window.location.href = "meta.html";
+              });
+            </script>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Polls Section -->
+    <div class="main" id="polls">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>Make Your Voice Heard</h1>
+          <h2>Vote Today</h2>
+          <p>New Polls Everyday</p>
+          <button class="main__btn"><a onclick="window.location.href='poll-info.html'" >Click Me if You're Opinionated</a></button>
+        </div>
+        <div class="main__img--container">
+          <div class="main__img--card" id="card-2">
+            <i class="fas fa-users"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="main" id="about">
+      <div class="main__container">
+        <div class="main__img--container">
+          <div class="main__img--card"><i class="fa-solid fa-question fa-beat-fade fa-10x"></i></div>
+        </div>
+        <div class="main__content">
+          <h1>What is the purpose of the website?</h1>
+          <h2>It is to provide up to date news on the market</h2>
+          <p>Email to learn more about our ideas</p>
+          <button class="main__btn"><a href="mailto:paulmacdonald2004@gmail.com" class="email-link">Email</a></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+      <div class="footer__links">
+
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Sources</h2>
+            <a href="https://finance.yahoo.com">Yahoo</a> <a href="https://www.wsj.com">WSJ</a>
+            <a href="https://www.marketwatch.com">MarketWatch</a> <a href="https://www.investopedia.com">Investopedia</a>
+          </div>
+
+          <div class="footer__link--items">
+            <h2>Contact Us</h2>
+            <a href="mailto:paulmacdonald2004@gmail.com" class="email-link">Email</a> 
+            <a href="/">Venmo: @paulmac5555</a>
+          </div>
+        </div>
+
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Videos</h2>
+            <a href="https://www.youtube.com/watch?v=gFQNPmLKj1k">Guide to Investing</a> <a href="https://www.youtube.com/watch?v=ZCFkWDdmXG8">History of Finance</a>
+            <a href="https://www.youtube.com/watch?v=EKYMbsjUUtE">Taxes</a>
+          </div>
+          <div class="footer__link--items">
+            <h2>Social Media</h2>
+            <a href="/">Instagram</a> <a href="/">Facebook</a>
+            <a href="/">Youtube</a> <a href="/">Twitter</a>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!--    Social Media Links    -->
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <a href="/" id="footer__logo">Report on the Market</a>
+          </div>
+          <p class="website__rights">© Report 2023. All rights reserved</p>
+          <div class="social__icons">
+            <a href="https://www.facebook.com/Cristiano/" class="social__icon--link" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/_paul_macdonald/" class="social__icon--link"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/paul-macdonald-154162240/" class="social__icon--link"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="https://www.twitter.com/Cristiano/" class="social__icon--link"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
