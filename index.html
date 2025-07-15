@@ -3,12 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Market Watch</title>
+    <title>Report on the Market - Real-Time Stock Analysis</title>
     <link rel="stylesheet" href="style.css" />
-    
-      <script src="https://kit.fontawesome.com/e6a2fc60c7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="ticker-style.css" />
+    <script src="https://kit.fontawesome.com/e6a2fc60c7.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    <!-- Stock Market Ticker -->
+    <div class="stock-ticker">
+      <div class="ticker-container">
+        <div class="ticker-track">
+          <!-- Stock entries will be populated by JavaScript -->
+        </div>
+      </div>
+    </div>
+
     <!-- Navbar Section -->
     <nav class="navbar">
       <div class="navbar__container">
@@ -22,17 +31,13 @@
             <a href="#home" class="navbar__links" id="home-page">Home</a>
           </li>
           <li class="navbar__item">
-            <a href="#about" class="navbar__links" id="about-page"
-              >About</a
-            >
+            <a href="#about" class="navbar__links" id="about-page">About</a>
           </li>
           <li class="navbar__item">
             <a href="#stocks" class="navbar__links" id="stocks-page">Stocks</a>
           </li>
           <li class="navbar__item">
-            <a href="#polls" class="navbar__links" id="polls-page"
-              >Polls</a
-            >
+            <a href="#polls" class="navbar__links" id="polls-page">Polls</a>
           </li>
           <li class="navbar__btn">
             <a href="mailto:paulmacdonald2004@gmail.com" class="button" id="signup">Ideas?</a>
@@ -50,96 +55,105 @@
       </div>
     </div>
 
-    
-
     <!-- Stocks Section -->
     <div class="stocks" id="stocks">
       <h1>Stocks</h1>
-      <div class="stocks__wrapper">
+      <div class="stocks__wrapper stocks__grid-12">
+        <!-- TSM -->
         <div class="stocks__card">
           <h2>TSM</h2>
           <p>Taiwan Semiconductor Manufacturing</p>
           <div class="stocks__btn">
-            <style>
-             .large-button {
-               width:250px;
-               height:250px;
-             }
-           </style>
-             <body>
-              <img src="tsm.png" id="tsm-button" class="large-button">
-         
-               <script type="text/javascript">
-             const tsmButton = document.getElementById("tsm-button");
-             tsmButton.addEventListener("click", function() {
-               window.location.href = "tsm-info.html";
-             });
-           </script>
-           </div>
+            <img src="tsm.png" id="tsm-button" class="large-button" onclick="window.location.href='tsm-info.html'" alt="TSM Logo">
+          </div>
         </div>
+        <!-- AAPL -->
         <div class="stocks__card">
           <h2>AAPL</h2>
           <p>Apple</p>
           <div class="stocks__btn">
-            <style>
-              .large-button {
-                width:250px;
-                height:250px;
-              }
-            </style>
-              <body>
-               <img src="Apple.png" id="apple-button" class="large-button">
-          
-                <script type="text/javascript">
-              const appleButton = document.getElementById("apple-button");
-              appleButton.addEventListener("click", function() {
-                window.location.href = "apple.html";
-              });
-            </script>
-            </div>
+            <img src="Apple.png" id="apple-button" class="large-button" onclick="window.location.href='apple.html'" alt="Apple Logo">
+          </div>
         </div>
+        <!-- MSFT -->
         <div class="stocks__card">
           <h2>MSFT</h2>
           <p>Microsoft</p>
           <div class="stocks__btn">
-            <style>
-              .large-button {
-                width:250px;
-                height:250px;
-              }
-            </style>
-              <body>
-               <img src="msft.png" id="microsoft-button" class="large-button">
-          
-                <script type="text/javascript">
-              const msftButton = document.getElementById("microsoft-button");
-              msftButton.addEventListener("click", function() {
-                window.location.href = "msft.html";
-              });
-            </script>
-          
+            <img src="msft.png" id="microsoft-button" class="large-button" onclick="window.location.href='msft.html'" alt="Microsoft Logo">
+          </div>
         </div>
-        </div>
+        <!-- META -->
         <div class="stocks__card">
           <h2>META</h2>
           <p>META Platforms</p>
           <div class="stocks__btn">
-            <style>
-              .large-button {
-                width:250px;
-                height:250px;
-              }
-            </style>
-              <body>
-               <img src="meta.png" id="meta-button" class="large-button">
-          
-                <script type="text/javascript">
-              const metaButton = document.getElementById("meta-button");
-              metaButton.addEventListener("click", function() {
-                window.location.href = "meta.html";
-              });
-            </script>
-            </div>
+            <img src="meta.png" id="meta-button" class="large-button" onclick="window.location.href='meta.html'" alt="Meta Logo">
+          </div>
+        </div>
+        <!-- GOOGL -->
+        <div class="stocks__card">
+          <h2>GOOGL</h2>
+          <p>Alphabet Inc.</p>
+          <div class="stocks__btn">
+            <div class="large-button placeholder-logo" onclick="window.location.href='googl.html'">GOOGL</div>
+          </div>
+        </div>
+        <!-- AMZN -->
+        <div class="stocks__card">
+          <h2>AMZN</h2>
+          <p>Amazon.com Inc.</p>
+          <div class="stocks__btn">
+            <div class="large-button placeholder-logo" onclick="window.location.href='amzn.html'">AMZN</div>
+          </div>
+        </div>
+        <!-- NVDA -->
+        <div class="stocks__card">
+          <h2>NVDA</h2>
+          <p>NVIDIA Corp.</p>
+          <div class="stocks__btn">
+            <div class="large-button placeholder-logo" onclick="window.location.href='nvda.html'">NVDA</div>
+          </div>
+        </div>
+        <!-- TSLA -->
+        <div class="stocks__card">
+          <h2>TSLA</h2>
+          <p>Tesla Inc.</p>
+          <div class="stocks__btn">
+            <div class="large-button placeholder-logo" onclick="window.location.href='tsla.html'">TSLA</div>
+          </div>
+        </div>
+        <!-- BRK.A -->
+        <div class="stocks__card">
+          <h2>BRK.A</h2>
+          <p>Berkshire Hathaway</p>
+          <div class="stocks__btn">
+            <div class="large-button placeholder-logo" onclick="window.location.href='brka.html'">BRK.A</div>
+          </div>
+        </div>
+        <!-- JPM -->
+        <div class="stocks__card">
+          <h2>JPM</h2>
+          <p>JPMorgan Chase & Co.</p>
+          <div class="stocks__btn">
+            <div class="large-button placeholder-logo" onclick="window.location.href='jpm.html'">JPM</div>
+          </div>
+        </div>
+        <!-- V -->
+        <div class="stocks__card">
+          <h2>V</h2>
+          <p>Visa Inc.</p>
+          <div class="stocks__btn">
+            <div class="large-button placeholder-logo" onclick="window.location.href='v.html'">V</div>
+          </div>
+        </div>
+        <!-- UNH -->
+        <div class="stocks__card">
+          <h2>UNH</h2>
+          <p>UnitedHealth Group</p>
+          <div class="stocks__btn">
+            <div class="large-button placeholder-logo" onclick="window.location.href='unh.html'">UNH</div>
+          </div>
         </div>
       </div>
     </div>
@@ -208,9 +222,7 @@
         </div>
       </div>
 
-
-
-      <!--    Social Media Links    -->
+      <!-- Social Media Links -->
       <section class="social__media">
         <div class="social__media--wrap">
           <div class="footer__logo">
@@ -218,26 +230,115 @@
           </div>
           <p class="website__rights">© Report 2023. All rights reserved</p>
           <div class="social__icons">
-            <a href="https://www.facebook.com/Cristiano/" class="social__icon--link" target="_blank"
-              ><i class="fab fa-facebook"></i
-            ></a>
-            <a href="https://www.instagram.com/_paul_macdonald/" class="social__icon--link"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="/" class="social__icon--link"
-              ><i class="fab fa-youtube"></i
-            ></a>
-            <a href="https://www.linkedin.com/in/paul-macdonald-154162240/" class="social__icon--link"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-            <a href="https://www.twitter.com/Cristiano/" class="social__icon--link"
-              ><i class="fab fa-twitter"></i
-            ></a>
+            <a href="https://www.facebook.com/Cristiano/" class="social__icon--link" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/_paul_macdonald/" class="social__icon--link">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="/" class="social__icon--link">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/paul-macdonald-154162240/" class="social__icon--link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.twitter.com/Cristiano/" class="social__icon--link">
+              <i class="fab fa-twitter"></i>
+            </a>
           </div>
         </div>
       </section>
     </div>
 
+    <script src="ticker.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
+<style>
+  .stocks__grid-12 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem 2rem;
+    justify-items: center;
+    align-items: stretch;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .stocks__card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    padding: 1.5rem 1rem 1.2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 210px;
+    max-width: 260px;
+    transition: box-shadow 0.2s, transform 0.2s;
+  }
+  .stocks__card:hover {
+    box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+    transform: translateY(-4px) scale(1.03);
+  }
+  .stocks__card h2 {
+    margin: 0 0 0.3em 0;
+    font-size: 1.5em;
+    color: #1a1a1a;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  .stocks__card p {
+    margin: 0 0 1.1em 0;
+    color: #555;
+    font-size: 1em;
+    text-align: center;
+    min-height: 2.2em;
+  }
+  .stocks__btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .large-button {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    background: #f5f5f5;
+    border-radius: 16px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: box-shadow 0.2s, background 0.2s;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  }
+  .large-button:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+    background: #e9e9e9;
+  }
+  .placeholder-logo {
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #e0e0e0 60%, #f5f5f5 100%);
+  }
+  @media (max-width: 900px) {
+    .stocks__grid-12 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 600px) {
+    .stocks__grid-12 {
+      grid-template-columns: 1fr;
+    }
+    .stocks__card {
+      min-width: 0;
+      max-width: 100%;
+    }
+  }
+</style>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NVIDIA Corp. (NVDA) - Market Analysis | Report on the Market</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="ticker-style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" crossorigin="anonymous" />
+    <link rel="stylesheet" href="nvda-style.css" />
+  </head>
+  <body>
+    <!-- Stock Market Ticker -->
+    <div class="stock-ticker">
+      <div class="ticker-container">
+        <div class="ticker-track"></div>
+      </div>
+    </div>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="index.html#home" id="navbar__logo">Report</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span> <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item"><a href="index.html#home" class="navbar__links" id="home-page">Home</a></li>
+          <li class="navbar__item"><a href="index.html#about" class="navbar__links" id="about-page">About</a></li>
+          <li class="navbar__item"><a href="index.html#stocks" class="navbar__links" id="stocks-page">Stocks</a></li>
+          <li class="navbar__item"><a href="index.html#polls" class="navbar__links" id="polls-page">Polls</a></li>
+          <li class="navbar__btn"><a href="mailto:paulmacdonald2004@gmail.com" class="button" id="signup">Ideas?</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Main Content -->
+    <main class="stock-page">
+      <section class="stock-header">
+        <div class="container">
+          <div class="stock-info">
+            <div class="stock-logo">
+              <img src="images/nvda-logo.png" alt="NVIDIA Logo" class="company-logo">
+            </div>
+            <div class="stock-details">
+              <h1 class="company-name">NVIDIA Corp.</h1>
+              <p class="ticker-symbol">NASDAQ: NVDA</p>
+              <p class="company-description">Technology • Semiconductors • AI Hardware</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="chart-section">
+        <div class="container">
+          <h2 class="section-title">Price Chart</h2>
+          <div class="tradingview-widget-container">
+            <div id="tradingview_nvda"></div>
+          </div>
+        </div>
+      </section>
+      <section class="analysis-section">
+        <div class="container">
+          <div class="analysis-grid">
+            <div class="analysis-card">
+              <h3 class="card-title"><i class="fas fa-chart-line"></i> Key Facts</h3>
+              <div class="card-content">
+                <div class="fact-item">
+                  <h4>AI & GPU Leadership</h4>
+                  <p>NVIDIA is the global leader in graphics processing units (GPUs) and a key enabler of AI and data center growth.</p>
+                </div>
+                <div class="fact-item">
+                  <h4>Data Center Expansion</h4>
+                  <p>NVIDIA’s data center business is rapidly expanding, driven by demand for AI and cloud computing.</p>
+                </div>
+              </div>
+            </div>
+            <div class="analysis-card">
+              <h3 class="card-title"><i class="fas fa-lightbulb"></i> Key Takeaways</h3>
+              <div class="card-content">
+                <div class="takeaway-item">
+                  <h4>Competition</h4>
+                  <p>NVIDIA faces competition from AMD, Intel, and new AI chip startups, but maintains a strong technology lead.</p>
+                </div>
+                <div class="takeaway-item">
+                  <h4>AI Tailwinds</h4>
+                  <p>AI adoption across industries is a major growth driver for NVIDIA’s products and services.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="summary-section">
+        <div class="container">
+          <div class="summary-card">
+            <h3 class="card-title"><i class="fas fa-briefcase"></i> Investment Summary</h3>
+            <div class="summary-content">
+              <p>NVIDIA’s leadership in GPUs and AI, along with its expanding data center business, make it a top pick for exposure to the future of computing. Investors should monitor competition and supply chain risks.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer__container">
+      <div class="footer__links">
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Sources</h2>
+            <a href="/">Yahoo</a> <a href="/">WSJ</a> <a href="/">MarketWatch</a> <a href="/">Investopedia</a>
+          </div>
+          <div class="footer__link--items">
+            <h2>Contact Us</h2>
+            <a href="mailto:paulmacdonald2004@gmail.com" class="email-link">Email</a> <a href="/">Venmo: @paulmac5555</a>
+          </div>
+        </div>
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Videos</h2>
+            <a href="https://www.youtube.com/watch?v=gFQNPmLKj1k">Guide to Investing</a> <a href="https://www.youtube.com/watch?v=ZCFkWDdmXG8">History of Finance</a> <a href="https://www.youtube.com/watch?v=EKYMbsjUUtE">Taxes</a>
+          </div>
+          <div class="footer__link--items">
+            <h2>Social Media</h2>
+            <a href="/">Instagram</a> <a href="/">Facebook</a> <a href="/">Youtube</a> <a href="/">Twitter</a>
+          </div>
+        </div>
+      </div>
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo"><a href="/" id="footer__logo">Report on the Market</a></div>
+          <p class="website__rights">© Report 2023. All rights reserved</p>
+          <div class="social__icons">
+            <a href="https://www.facebook.com/Cristiano/" class="social__icon--link" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/_paul_macdonald/" class="social__icon--link"><i class="fab fa-instagram"></i></a>
+            <a href="/" class="social__icon--link"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/paul-macdonald-154162240/" class="social__icon--link"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.twitter.com/Cristiano/" class="social__icon--link"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script type="text/javascript">
+      new TradingView.widget({
+        "width": "100%",
+        "height": 500,
+        "symbol": "NASDAQ:NVDA",
+        "interval": "D",
+        "timezone": "Etc/UTC",
+        "theme": "dark",
+        "style": "1",
+        "locale": "en",
+        "toolbar_bg": "#f1f3f6",
+        "enable_publishing": false,
+        "allow_symbol_change": true,
+        "container_id": "tradingview_nvda"
+      });
+    </script>
+    <script src="ticker.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html> 
